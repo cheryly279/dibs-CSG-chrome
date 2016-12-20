@@ -3,10 +3,17 @@
     "description": "Adding coding standard topics to digest.",
     "version": "0.1",
     "manifest_version": 2,
-    "app": {
-        "background": {
-            "scripts": ["background.js"]
-        }
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js"]
     },
-    "icons": { "16": "icon_16.png", "128": "icon_128.png" }
+    "icons": { "16": "icon_16.png", "128": "icon_128.png" },
+    "permissions": [
+        "tabs"
+    ],
+    "browser_action": {
+        "default_title": "",
+        "default_icon": "icon_16.png",
+        "default_popup": "window.html"
+    }
 }
