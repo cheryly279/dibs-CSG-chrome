@@ -10,7 +10,8 @@ function addTopic(e) {
             body: JSON.stringify({
                 addedBy: 1,
         		name: document.getElementById('name').value,
-        		description: document.getElementById('description').value + ", \r\nurl: " + url
+        		description: document.getElementById('description').value,
+                url: url
         	}),
         	headers: new Headers({
         		'Content-Type': 'application/json'
