@@ -1,0 +1,12 @@
+{
+    "name": "1st Hub",
+    "description": "Adding coding standard topics to digest.",
+    "version": "0.1",
+    "manifest_version": 2,
+    "app": {
+        "background": {
+            "scripts": ["background.js"]
+        }
+    },
+    "icons": { "16": "icon_16.png", "128": "icon_128.png" }
+}
