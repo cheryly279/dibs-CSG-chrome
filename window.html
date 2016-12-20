@@ -1,8 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="submit.js"></script>
     </head>
     <body>
-        <div>Hello, world!</div>
+        <div id="status" style="color: red;"></div>
+        <div>Enter new topic for email digest:</div>
+        <form method="post" id="topic-form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="topic_name" />
+            </div>
+            <div>
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="topic_description" />
+            </div>
+            <div class="button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
     </body>
 </html>
