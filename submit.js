@@ -5,10 +5,10 @@ function addTopic(e) {
     chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
         var url = tabs[0].url;
 
-        fetch('http://ec2-54-144-194-47.compute-1.amazonaws.com:8081/topic', {
+        fetch('http://localhost:8081/topic', {
         	method: 'POST',
             body: JSON.stringify({
-                addedBy: 1,
+                addedBy: 3,
         		name: document.getElementById('name').value,
         		description: document.getElementById('description').value,
                 url: url
@@ -17,7 +17,7 @@ function addTopic(e) {
         		'Content-Type': 'application/json'
         	})
         }).then(function(result) {
-            document.getElementById('status').innerHTML = 'Topic ' + topicName + ' added successfully!<br /><br />';
+            document.getElementById('status').innerHTML = 'Topic ' + topicName + ' added successfully!!!<br /><br />';
         }).catch(function(err) {
             document.getElementById('status').innerHTML = 'Error: ' + err.message + '<br /><br />';
         });
