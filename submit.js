@@ -17,7 +17,8 @@ function addTopic(e) {
         		'Content-Type': 'application/json'
         	})
         }).then(function(result) {
-            document.getElementById('status').innerHTML = 'Topic ' + topicName + ' added successfully!!!<br /><br />';
+            console.log(result);
+            document.getElementById('status').innerHTML = 'Topic ' + topicName + ' added successfully!<br /><br />';
         }).catch(function(err) {
             document.getElementById('status').innerHTML = 'Error: ' + err.message + '<br /><br />';
         });

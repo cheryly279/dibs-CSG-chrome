@@ -1,0 +1,26 @@
+html {
+    min-width: 400px;
+}
+
+body {
+    min-width: 400px;
+    padding: 20px;
+}
+
+.wrapper {
+    width: 300px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.status {
+    color: red;
+}
+
+.spacer {
+    margin: 15px 0px;
+}
+
+button, input, textarea {
+    font-size: 20px;
+}
